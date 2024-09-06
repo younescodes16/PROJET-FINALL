@@ -25,7 +25,7 @@
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
-  background-color: brown;
+  background-color: #e67e22;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.1rem;
@@ -40,18 +40,62 @@
 .empy {
   padding: 300px;
   display: flex;
+  flex-direction: column;
+}
+
+.btn-price, .btn-invoice {
+  background: linear-gradient(135deg, #FF7E5F, #FFB07C); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background 0.3s, transform 0.3s; 
+}
+
+
+
+.facture, .facture-invoice {
+  background: linear-gradient(135deg, #FF7E5F, #FFB07C); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background 0.3s, transform 0.3s; 
+  margin-left: 20px;
+}
+
+
+.facture:hover, .facture:hover {
+  background: linear-gradient(135deg, #FFB07C, #FF7E5F); 
+  transform: scale(1.05); 
+}
+
+
+.facture-invoice {
+  background: linear-gradient(135deg, #4CAF50, #8BC34A); 
+}
+
+
+.facture:hover {
+  background: linear-gradient(135deg, #8BC34A, #4CAF50); 
+}
+
+.empty{
+  display: flex;
   justify-content: center;
 }
-.btn-price {
-  background-color: rgb(255, 246, 75);
-  color: rgb(0, 0, 0);
-  margin: 30px;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 100px;
-  margin-top: 50px;
-  border: thick double #3c32ce;
-  border-radius: 20px;
-  
+.empty-img {
+  background-color: red;
+}
+.icons{
+  height: 300px ;
+  width: 300px;
 }

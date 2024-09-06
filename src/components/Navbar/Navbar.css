@@ -1,111 +1,119 @@
-/* Navbar container */
+
 .navbar {
-    background-color: #f39c12; /* Bright orange for a vibrant look */
+  background-color: #f39c12; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #e67e22;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .nav-items {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar ul li {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 15px;
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar ul li:hover {
+  color: #34495e;
+  transform: translateY(-5px);
+}
+
+.navbar ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #e67e22;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar ul li svg {
+  font-size: 1.5rem;
+}
+.menu {
+  color: white;
+  font-size: xx-large;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar li {
+    display: none;
+  }
+  .menu {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav items */
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #e67e22;
-    position: fixed; /* Fixed position for sticky navbar */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure navbar is on top */
   }
-  
-  /* Navbar logo */
-  .navbar .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar .logo img {
-    height: 40px; /* Adjust logo size */
-    width: auto;
-  }
-  
-  /* Navbar list container */
-  .navbar .nav-items {
-    display: flex;
-    justify-content: center; /* Center nav items horizontally */
-    flex-grow: 1; /* Allow this to take remaining space */
-  }
-  
-  /* Navbar list */
-  .navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 30px; /* Space between items */
-  }
-  
-  /* Navbar list items */
-  .navbar ul li {
-    position: relative;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff;
-    padding: 10px 15px;
-    transition: color 0.3s, transform 0.3s;
-    cursor: pointer;
-  }
-  
-  /* Navbar link styles */
-  .navbar ul a {
-    text-decoration: none;
-    color: inherit; /* Inherit color from li */
-  }
-  
-  /* Hover effect for list items */
-  .navbar ul li:hover {
-    color: #34495e; /* Darker color on hover */
-    transform: translateY(-5px); /* Slight lift effect */
-  }
-  
-  /* Hover effect for links */
-  .navbar ul li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 3px;
-    background-color: #e67e22;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .navbar ul li:hover::after {
-    transform: scaleX(1);
-  }
-  
-  /* Icon styles */
-  .navbar ul li svg {
-    font-size: 1.5rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .navbar {
-      padding: 10px;
-    }
-  
-    .navbar .nav-items {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .navbar ul {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .navbar ul li {
-      font-size: 1rem;
-    }
-  }
-  
+}
+.sidemenu{
+  background-color: #e67e22;
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.sidemenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   height: 100%;
+   
+}
+.sidemenu ul li {
+  display: flex;
+}
+.close{
+  color: white;
+  font-size:xx-large;
+  cursor: pointer;
+}

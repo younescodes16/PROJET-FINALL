@@ -1,0 +1,130 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 250, 241);
+  padding: 20px;
+}
+
+.auth-box {
+  background-color: rgb(245, 226, 194);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e67e22;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #9a4800;
+}
+
+.toggle-auth {
+  text-align: center;
+  margin-top: 20px;
+  color: #e67e22;
+  cursor: pointer;
+}
+
+.toggle-auth:hover {
+  text-decoration: underline;
+}
+
+/* ----- Responsive ----- */
+
+/* Petits écrans (téléphones) */
+@media (max-width: 600px) {
+  .auth-box {
+    padding: 20px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .auth-button {
+    font-size: 14px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Écrans de taille moyenne (tablettes) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .auth-box {
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  .input-group input {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+/* Grands écrans */
+@media (min-width: 1025px) {
+  .auth-container {
+    padding: 0;
+  }
+
+  .auth-box {
+    max-width: 400px;
+    padding: 40px;
+  }
+
+  .input-group input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

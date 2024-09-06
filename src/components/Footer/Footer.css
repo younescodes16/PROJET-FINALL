@@ -1,7 +1,7 @@
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 20px; /* Ajout de padding sur les côtés pour petits écrans */
 }
 
 .footer-content {
@@ -9,11 +9,14 @@
     justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap; /* Permet aux sections de se placer en colonne sur petits écrans */
 }
 
 .footer-section {
     flex: 1;
-    padding: 0 20px;
+    padding: 20px;
+    min-width: 250px; /* Assure que les sections ne deviennent pas trop petites */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
 }
 
 .footer-section h3 {
@@ -62,4 +65,53 @@
     margin: 0;
     font-size: 0.9em;
     color: #bbb;
+}
+
+/* Media queries pour les écrans de tablettes */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Empile les sections en colonne */
+        text-align: center; /* Centre le texte sur les petits écrans */
+    }
+    
+    .footer-section {
+        padding: 10px 0;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3em;
+    }
+    
+    .footer-section p, .footer-section ul, .footer-section a {
+        font-size: 0.9em;
+    }
+    
+    .footer-section .social-icons a {
+        font-size: 1.3em;
+    }
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 10px 0;
+        min-width: 100%; /* Assure que chaque section prend toute la largeur */
+    }
+
+    .footer-section h3 {
+        font-size: 1.2em;
+    }
+    
+    .footer-section p, .footer-section ul, .footer-section a {
+        font-size: 0.85em;
+    }
+    
+    .footer-section .social-icons a {
+        font-size: 1.2em;
+        margin-right: 8px;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8em;
+    }
 }
