@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5vh;
-  margin-top: 50px;
+  gap: 30vh;
   padding: 20px;
 }
 
@@ -11,6 +10,8 @@
   display: flex;
   flex-direction: column;
   padding: 50px;
+  margin-top: 150px;
+  gap: 5vh;
 }
 
 .para {
@@ -19,6 +20,7 @@
 
 .empla {
   font-size: 40px;
+  color: #e67e22;
 }
 
 .icons {
@@ -37,10 +39,12 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  
 }
 
 .form {
   font-size: 40px;
+  color: #e67e22;
 }
 
 .input-contact {
