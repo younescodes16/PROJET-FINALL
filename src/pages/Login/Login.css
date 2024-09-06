@@ -67,9 +67,9 @@ h2 {
   text-decoration: underline;
 }
 
-/* ----- Responsive ----- */
 
-/* Petits écrans (téléphones) */
+
+
 @media (max-width: 600px) {
   .auth-box {
     padding: 20px;
@@ -91,7 +91,7 @@ h2 {
   }
 }
 
-/* Écrans de taille moyenne (tablettes) */
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .auth-box {
     max-width: 500px;
@@ -108,7 +108,7 @@ h2 {
   }
 }
 
-/* Grands écrans */
+
 @media (min-width: 1025px) {
   .auth-container {
     padding: 0;

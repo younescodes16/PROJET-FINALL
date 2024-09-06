@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./cart.css";
+import {Link} from "react-router-dom"
 import { remove, setQuantity } from "../../redux/slice/cartslice";
 import jsPDF from "jspdf";
 
@@ -108,8 +109,10 @@ export default function Cart() {
         )}
         <div className="btn-cart">
         <button className="btn-price">Total: {total.toFixed(2)} DA</button>
+        <Link  to= "/paiment"><button className="paiment" >PAIMENT</button></Link>
         <button className="facture" onClick={handleGenerateInvoice}>FACTURE</button>
-        <button>paye</button>
+        
+        
         </div>
       </div>
     </>

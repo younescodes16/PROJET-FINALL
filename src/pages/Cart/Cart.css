@@ -99,3 +99,44 @@
   height: 300px ;
   width: 300px;
 }
+.paiment, .facture-invoice {
+  background: linear-gradient(135deg, #FF7E5F, #FFB07C); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background 0.3s, transform 0.3s; 
+  margin-left: 20px;
+}
+
+
+.paiment:hover, .paiment:hover {
+  background: linear-gradient(135deg, #FFB07C, #FF7E5F); 
+  transform: scale(1.05); 
+}
+
+
+.paiment-invoice {
+  background: linear-gradient(135deg, #4CAF50, #8BC34A); 
+}
+
+
+.paiment:hover {
+  background: linear-gradient(135deg, #8BC34A, #4CAF50); 
+}
+
+.empty{
+  display: flex;
+  justify-content: center;
+}
+.empty-img {
+  background-color: red;
+}
+.icons{
+  height: 300px ;
+  width: 300px;
+}
