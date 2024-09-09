@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import misson from "../../photo/misson.webp";
-import histoire from "../../photo/histoire.webp";
+import maisson from "../../photo/maisson.jpg";
+import histoire from "../../photo/histoire.jpg";
 import './About.css';
 
 const AboutUs = () => {
@@ -33,14 +33,14 @@ const AboutUs = () => {
           <p>Notre mission est simple : rendre le shopping plus agréable et accessible à tous. Nous pensons qu'acheter le produit parfait devrait être aussi amusant que de le porter. C'est pourquoi nous avons conçu notre magasin pour offrir non seulement des produits, mais aussi une expérience. Que vous magasiniez pour vous-même ou que vous recherchiez le cadeau parfait, nous avons quelque chose pour tout le monde.</p>
         </div>
         <div className="about-us-image">
-          <img src={misson} alt="Our Mission" />
+          <img src={maisson} alt="Our Mission" />
         </div>
       </div>
 
       <div className="about-us-footer" data-aos="fade-up">
         <h3>Merci!</h3>
         <p>Nous espérons que vous apprécierez nos produits autant que nous aimons vous les proposer. Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter.</p>
-        <p>Sincèrement, <br />AG STOR</p>
+        <p>Sincèrement, <br />AG Shopping</p>
       </div>
     </div>
   );

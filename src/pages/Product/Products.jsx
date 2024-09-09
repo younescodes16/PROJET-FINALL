@@ -47,6 +47,7 @@ const App = () => {
 
   return (
     <>
+    <div className="products-container">
       <div className="search-container">
         <FaSearch />
         <input
@@ -67,6 +68,7 @@ const App = () => {
         </div>
       </div>
       <Productlist products={filteredProducts} />
+      </div>
     </>
   );
 };

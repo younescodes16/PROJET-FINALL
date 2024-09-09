@@ -1,38 +1,3 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-/* 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -40,93 +5,116 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f3f4f6;
   color: #333;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 40px;
-  min-height: 100vh;
-  background-color: #ffffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  max-width: 1200px;
-  margin: 40px auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./photo/back-home.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 70px;
+ 
 }
 
 .header {
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .header h1 {
   font-size: 3rem;
-  color: #2c3e50;
+  color: #e47805;
   margin-bottom: 10px;
   animation: fadeInDown 1s ease-out;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #7f8c8d;
+  color: #00c9d7;
   margin-bottom: 20px;
   animation: fadeInUp 1.5s ease-out;
 }
 
-
 .content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 30px;
   width: 100%;
 }
 
 .content-text {
-  flex: 1;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
-  color: #555;
+  color: #ffffff;
+  margin-top: 50px;
 }
 
-.content-image {
-  flex: 1;
+.category-home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category-home1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.category-home1 > div {
+  flex: 1 1 calc(50% - 20px);
+  background: rgba(255, 255, 255, 0.8) /* Fond blanc avec 80% d'opacité */
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-home1 > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.category-home h1 {
+  color: #e47805;
+  margin-bottom: 10px;
+}
+
+.category-home p {
+  color:white;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-decoration: ;
+  
 }
 
-.content-image svg {
-  position: absolute;
-  width: 300px;
+.image-home {
   height: 300px;
-  z-index: -1;
-  opacity: 0.1;
-  transform: rotate(-30deg);
-}
-
-.image-wrapper {
-  overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s ease;
-}
-
-.image-wrapper:hover {
-  transform: scale(1.1) rotate(2deg);
-}
-
-.image {
   width: 100%;
-  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
+.image-home:hover {
+  transform: scale(1.05);
+}
+.content-text p{
+  font-family: cursive;
+  
+}
 
 @keyframes fadeInDown {
   from {
@@ -150,11 +138,40 @@ body {
   }
 }
 
+/* Règles spécifiques pour les tablettes */
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px;
+    margin-top: 60px;
+  }
 
-@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
   .content {
-    flex-direction: column;
-    gap: 20px;
+    gap: 25px;
+  }
+
+  .content-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .image-home {
+    height: 250px;
+  }
+}
+
+/* Règles spécifiques pour les mobiles */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-top: 50px;
   }
 
   .header h1 {
@@ -163,5 +180,47 @@ body {
 
   .subtitle {
     font-size: 1.2rem;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .content-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .image-home {
+    height: 200px;
+  }
+}
+
+/* Règles spécifiques pour les très petits écrans */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .content {
+    gap: 15px;
+  }
+
+  .content-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .image-home {
+    height: 150px;
   }
 }

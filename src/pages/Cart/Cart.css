@@ -140,3 +140,9 @@
   height: 300px ;
   width: 300px;
 }
+.cart-image{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url("../../photo/product.jpg");
+  background-size: cover;
+  background-position: center;
+}

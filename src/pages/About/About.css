@@ -3,7 +3,9 @@
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     overflow-x: hidden;
-    margin-top: 100px;
+    margin-top: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("../../photo/about.jpg");
   }
   
   .about-us-header {
@@ -12,13 +14,13 @@
   }
   
   .about-us-header h1 {
-    font-size: 3rem;
-    color: #333;
+    font-size: 5rem;
+    color: #e47805;
   }
   
   .about-us-header p {
     font-size: 1.2rem;
-    color: #666;
+    color: white;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -40,12 +42,12 @@
   
   .about-us-content h2 {
     font-size: 2rem;
-    color: #333;
+    color: #e47805;
   }
   
   .about-us-content p {
     font-size: 1.1rem;
-    color: #666;
+    color: white;
     line-height: 1.6;
   }
   
