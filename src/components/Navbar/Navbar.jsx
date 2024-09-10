@@ -5,12 +5,16 @@ import large from "../../photo/large.png";
 import { TiThMenuOutline } from "react-icons/ti"; // Import your logo image
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import { useSelector } from "react-redux";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const cartlenght = useSelector((state) => state.cart.products.length);
   return (
     <div className="navbar">
       <div className="logo">
+        <Link to="./">
         <img src={large} alt="Site Logo" />
+        </Link>
       </div>
       <div className="nav-items">
         <ul>
@@ -32,8 +36,9 @@ const Navbar = () => {
           </Link>
           <Link to="./Cart">
             <li>
-              <FaShoppingCart />
+              <FaShoppingCart className="card-icons" />
             </li>
+            {cartlenght > 0 && <div className="cart-length">{cartlenght}</div>}
           </Link>
         </ul>
         <div className="menu">

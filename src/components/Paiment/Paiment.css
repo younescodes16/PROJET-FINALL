@@ -55,6 +55,16 @@ height: 100vh;
   transition: background-color 0.3s ease;
   box-shadow: 0 0 10px rgba(209, 70, 160, 0.5);
 }
+.payment-form input,
+.payment-form textarea {
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+  background-color: #eda669;
+}
+
 .payment-form .btn:hover {
   background-color: #c04627;
   box-shadow: 0 0 15px rgba(209, 70, 160, 0.5);

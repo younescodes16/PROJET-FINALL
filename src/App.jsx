@@ -12,9 +12,7 @@ const App = () => {
         <h1 className="animate__animated animate__fadeInDown">
           Welcome To AG Shopping!
         </h1>
-        {/* <p className="subtitle animate__animated animate__fadeInUp">
-          Discover the best deals and latest trends in shopping!
-        </p> */}
+        
       </header>
 
       <section className="content">

@@ -117,3 +117,17 @@
   font-size:xx-large;
   cursor: pointer;
 }
+.cart-length {
+  position: absolute;
+  top: 23px;
+  right: 345px;
+  
+  color:#071ea0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
