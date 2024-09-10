@@ -63,6 +63,8 @@ const Paiment = () => {
     }
   };
   return (
+    <>
+    <div className='paiment-image'>
     <div className='cridt-card'>
       <div className="payment-form">
         <Cards
@@ -130,6 +132,8 @@ const Paiment = () => {
         </form>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 export default Paiment;

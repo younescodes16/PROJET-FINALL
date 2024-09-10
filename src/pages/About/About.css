@@ -1,94 +1,199 @@
+
+
+
 .about-us {
-    padding: 40px;
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    overflow-x: hidden;
-    margin-top: 70px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("../../photo/about.jpg");
-  }
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
   
-  .about-us-header {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
+  margin-top: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../photo/about.jpg");
+}
+
+.about-us-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-us-header h1 {
+  font-size: 5rem;
+  color: #e47805;
+}
+
+.about-us-header p {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.about-us-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-us-content h2 {
+  font-size: 2rem;
+  color: #e47805;
+}
+
+.about-us-content p {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.about-us-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.about-us-footer h3 {
+  font-size: 2rem;
+}
+
+.about-us-footer p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 1024px) {
   .about-us-header h1 {
-    font-size: 5rem;
-    color: #e47805;
+      font-size: 4rem;
   }
-  
+
   .about-us-header p {
-    font-size: 1.2rem;
-    color: white;
-    max-width: 800px;
-    margin: 0 auto;
+      font-size: 1rem;
   }
-  
+
   .about-us-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    opacity: 0;
-    transition: opacity 1s ease, transform 1s ease;
+      flex-direction: column;
+      text-align: center;
   }
-  
-  .about-us-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
+
   .about-us-content h2 {
-    font-size: 2rem;
-    color: #e47805;
+      font-size: 1.8rem;
   }
-  
+
   .about-us-content p {
-    font-size: 1.1rem;
-    color: white;
-    line-height: 1.6;
+      font-size: 1rem;
   }
-  
-  .about-us-image {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .about-us-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .about-us-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .about-us-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  }
-  
+
   .about-us-footer h3 {
-    font-size: 2rem;
+      font-size: 1.8rem;
   }
-  
+
   .about-us-footer p {
-    font-size: 1.2rem;
-    margin: 10px 0;
+      font-size: 1.1rem;
   }
-  
-  [data-aos] {
-    opacity: 1 !important;
-    transform: none !important;
+}
+
+
+@media (max-width: 768px) {
+  .about-us {
+      padding: 20px;
+      margin-top: 50px;
   }
-  
+
+  .about-us-header h1 {
+      font-size: 3rem;
+  }
+
+  .about-us-header p {
+      font-size: 0.9rem;
+  }
+
+  .about-us-section {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .about-us-content h2 {
+      font-size: 1.6rem;
+  }
+
+  .about-us-content p {
+      font-size: 0.9rem;
+  }
+
+  .about-us-image img {
+      height: 250px;
+  }
+
+  .about-us-footer h3 {
+      font-size: 1.6rem;
+  }
+
+  .about-us-footer p {
+      font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-us {
+      padding: 10px;
+      margin-top: 40px;
+  }
+
+  .about-us-header h1 {
+      font-size: 2.5rem;
+  }
+
+  .about-us-header p {
+      font-size: 0.8rem;
+  }
+
+  .about-us-content h2 {
+      font-size: 1.4rem;
+  }
+
+  .about-us-content p {
+      font-size: 0.8rem;
+  }
+
+  .about-us-image img {
+      height: 200px;
+  }
+
+  .about-us-footer h3 {
+      font-size: 1.4rem;
+  }
+
+  .about-us-footer p {
+      font-size: 0.9rem;
+  }
+}

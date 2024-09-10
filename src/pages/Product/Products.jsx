@@ -49,7 +49,7 @@ const App = () => {
     <>
     <div className="products-container">
       <div className="search-container">
-        <FaSearch />
+        <FaSearch className="icons-serch" />
         <input
           type="text"
           className="input-search-products"
