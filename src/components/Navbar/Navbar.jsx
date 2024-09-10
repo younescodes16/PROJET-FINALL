@@ -70,6 +70,7 @@ const Navbar = () => {
               <li >
                 <FaShoppingCart />
               </li>
+              
             </Link>
           </ul>
         </div>
