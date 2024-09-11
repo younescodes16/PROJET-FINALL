@@ -1,5 +1,5 @@
 import Productcard from "../Productcard/Productcard";
-import "./Productlist.css"
+import "./productlist.css"
 
 const Productlist = ({products}) => {
 
