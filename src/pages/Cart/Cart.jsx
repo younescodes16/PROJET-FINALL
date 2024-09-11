@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import "./cart.css";
+import "./Cart.css";
 import { Link } from "react-router-dom";
 import { remove, setQuantity } from "../../redux/slice/cartslice";
 import jsPDF from "jspdf";

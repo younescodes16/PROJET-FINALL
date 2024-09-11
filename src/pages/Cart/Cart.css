@@ -1,5 +1,3 @@
-
-
 .card {
   display: flex;
   flex-direction: column;
@@ -36,7 +34,6 @@
   font-size: 1.1rem;
 }
 
-
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,9 +41,11 @@
   padding: 20px;
 }
 
-
-.btn-price, .btn-invoice, .paiment, .facture {
-  background: linear-gradient(135deg, #FF7E5F, #FFB07C); 
+.btn-price,
+.btn-invoice,
+.paiment,
+.facture {
+  background: linear-gradient(135deg, #ff7e5f, #ffb07c);
   color: white;
   border: none;
   border-radius: 8px;
@@ -54,23 +53,25 @@
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: background  0.3s, transform 0.3s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
 }
 
-.btn-price:hover, .btn-invoice:hover, .paiment:hover, .facture:hover {
-  background: linear-gradient(135deg, #FFB07C, #FF7E5F); 
-  transform: scale(1.05); 
+.btn-price:hover,
+.btn-invoice:hover,
+.paiment:hover,
+.facture:hover {
+  background: linear-gradient(135deg, #ffb07c, #ff7e5f);
+  transform: scale(1.05);
 }
 
 .facture-invoice {
-  background: linear-gradient(135deg, #4CAF50, #8BC34A); 
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
 }
 
 .paiment-invoice {
-  background: linear-gradient(135deg, #4CAF50, #8BC34A); 
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
 }
-
 
 .empy {
   padding: 300px;
@@ -86,27 +87,27 @@
 }
 
 .cart-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../photo/product.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../photo/product.jpg");
   background-size: cover;
   background-position: center;
 }
-.btn-cart{
- display: flex;
- gap: 20px;
+.btn-cart {
+  display: flex;
+  gap: 20px;
 }
-
 
 @media (max-width: 1024px) {
   .product-list {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-  
+
   .card img {
     width: 250px;
     height: 250px;
   }
-  
+
   .price {
     font-size: 1.8rem;
   }
@@ -114,7 +115,7 @@
 
 @media (max-width: 768px) {
   .product-list {
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .card {
@@ -125,12 +126,15 @@
     width: 200px;
     height: 200px;
   }
-  
+
   .price {
     font-size: 1.6rem;
   }
-  
-  .btn-price, .btn-invoice, .paiment, .facture {
+
+  .btn-price,
+  .btn-invoice,
+  .paiment,
+  .facture {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
@@ -149,12 +153,15 @@
     width: 150px;
     height: 150px;
   }
-  
+
   .price {
     font-size: 1.4rem;
   }
-  
-  .btn-price, .btn-invoice, .paiment, .facture {
+
+  .btn-price,
+  .btn-invoice,
+  .paiment,
+  .facture {
     padding: 8px 15px;
     font-size: 0.8rem;
     display: flex;
