@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Productlist from "../../components/Productlist/Productlist";
-import "./products.css";
+import "./Products.css";
 import { FaSearch } from "react-icons/fa";
 
 const App = () => {
