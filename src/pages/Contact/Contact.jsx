@@ -31,7 +31,7 @@ const Contact = () => {
           <div className="containe1">
             <h1 className="empla">Empalacement </h1>
             <p className="para">
-              Hackerspace, 1 Place Tahar Haddad, 1 alger 1600. +213 770221559 
+              Hackerspace, 1 Place Tahar Hadad, 1 alger 1600. +213 770221559 
             </p>
           </div>
           <div className="container2">
